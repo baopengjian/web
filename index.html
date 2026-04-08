@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>前端学习演示项目</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>前端学习演示项目</h1>
+    <nav class="nav">
+      <button class="nav-btn active" data-module="learning">学习</button>
+      <button class="nav-btn" data-module="resources">资源</button>
+      <button class="nav-btn" data-module="engineering">工程</button>
+      <button class="nav-btn" data-module="display">展示</button>
+      <button class="nav-btn" data-module="my">我的</button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div id="learning" class="module active">
+      <h2>学习模块</h2>
+      <p>这里是前端学习资源和教程。</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="_blank">HTML 教程</a></li>
+        <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank">CSS 教程</a></li>
+        <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank">JavaScript 教程</a></li>
+      </ul>
+      <div class="learning-content">
+        <h3>基础概念</h3>
+        <p>前端开发涉及 HTML、CSS 和 JavaScript 的组合。</p>
+      </div>
+    </div>
+
+    <div id="resources" class="module">
+      <h2>资源模块</h2>
+      <p>前端开发工具和资源链接。</p>
+      <ul>
+        <li><a href="https://code.visualstudio.com/" target="_blank">VS Code</a></li>
+        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+        <li><a href="https://www.npmjs.com/" target="_blank">NPM</a></li>
+      </ul>
+      <div class="resources-content">
+        <h3>常用库</h3>
+        <p>React, Vue, Angular 等框架。</p>
+      </div>
+    </div>
+
+    <div id="engineering" class="module">
+      <h2>工程模块</h2>
+      <p>项目结构和构建工具介绍。</p>
+      <ul>
+        <li>Webpack</li>
+        <li>Vite</li>
+        <li>Parcel</li>
+      </ul>
+      <div class="engineering-content">
+        <h3>项目结构</h3>
+        <p>典型的现代前端项目结构。</p>
+      </div>
+    </div>
+
+    <div id="display" class="module">
+      <h2>展示模块</h2>
+      <p>前端效果演示。</p>
+      <div class="display-content">
+        <button id="showTableBtn">生成乘法表</button>
+        <div class="table-container" id="multiplicationTable"></div>
+        <h3>计算器</h3>
+        <div class="form-row">
+          <label for="expression">输入表达式：</label>
+          <input id="expression" type="text" placeholder="例如 12 + 5 * 3" />
+        </div>
+        <button id="evaluateBtn">计算</button>
+        <p class="result">结果：<span id="resultValue">--</span></p>
+        <p class="error" id="errorMessage"></p>
+      </div>
+    </div>
+
+    <div id="my" class="module">
+      <h2>我的模块</h2>
+      <p>个人信息和项目介绍。</p>
+      <div class="my-content">
+        <h3>关于我</h3>
+        <p>前端开发者，热爱学习新技术。</p>
+        <h3>项目</h3>
+        <ul>
+          <li>这个演示项目</li>
+          <li>其他前端项目...</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
