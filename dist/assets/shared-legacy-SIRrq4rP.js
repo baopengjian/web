@@ -1,0 +1,1 @@
+System.register([],function(t,n){"use strict";return{execute:function(){t("s",function(t){try{const n=function(t){return t.replace(/[^0-9.+\-*/()%\s]/g,"")}(t),e=Function(`"use strict"; return (${n})`)();return Number.isFinite(e)?e:null}catch{return null}})}}});

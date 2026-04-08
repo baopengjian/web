@@ -49,6 +49,8 @@
    http://localhost:5173
    ```
 
+> 注意：`npm run dev` 使用 Vite 开发服务器和现代浏览器原生 ES 模块加载机制。旧浏览器（例如某些 360 极速浏览器模式）无法兼容 `@vite/client` 的现代语法，可能会报 `Unexpected token '.'` 或模块加载失败。建议开发时使用 Chrome / Safari / Edge / Firefox。
+
 ## 生产构建
 
 1. 构建项目：

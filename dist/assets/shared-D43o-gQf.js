@@ -1,0 +1,1 @@
+function r(t){return t.replace(/[^0-9.+\-*/()%\s]/g,"")}function s(t){try{const n=r(t),e=Function('"use strict"; return ('.concat(n,")"))();return Number.isFinite(e)?e:null}catch(n){return null}}export{s};
